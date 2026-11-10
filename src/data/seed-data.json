@@ -1,0 +1,1391 @@
+{
+  "model": {
+    "name": "绿电直连经济测算",
+    "version": "3.1",
+    "sourceFile": "绿电直连经济测算_v3.1.xlsx",
+    "sourceUpdatedAt": "2026-07-10"
+  },
+  "defaults": {
+    "region": "山东",
+    "voltageLevel": "110千伏",
+    "projectType": "并网型",
+    "transmissionFeeMode": "单一容量制",
+    "capacityBillingMode": "按容量",
+    "fundBillingScope": "下网+自用",
+    "taxHolidayEnabled": "是"
+  },
+  "modeOptions": {
+    "projectType": [
+      "离网型",
+      "并网型"
+    ],
+    "transmissionFeeMode": [
+      "单一容量制",
+      "两部制"
+    ],
+    "capacityBillingMode": [
+      "按容量",
+      "按需量"
+    ],
+    "fundBillingScope": [
+      "下网+自用",
+      "仅下网"
+    ],
+    "taxHolidayEnabled": [
+      "是",
+      "否"
+    ]
+  },
+  "regions": [
+    "北京",
+    "天津",
+    "河北（南网价区）",
+    "冀北",
+    "山西",
+    "蒙东",
+    "蒙西（内蒙古电力）",
+    "辽宁",
+    "吉林",
+    "黑龙江",
+    "上海",
+    "江苏",
+    "浙江",
+    "安徽",
+    "福建",
+    "江西",
+    "山东",
+    "河南",
+    "湖北",
+    "湖南",
+    "广东（不含深圳）",
+    "深圳",
+    "广西",
+    "海南",
+    "重庆",
+    "四川",
+    "贵州",
+    "云南",
+    "陕西（不含榆林）",
+    "陕西（榆林地区）",
+    "甘肃",
+    "青海",
+    "宁夏",
+    "新疆"
+  ],
+  "voltageLevels": [
+    "1~10(20)千伏",
+    "35千伏",
+    "110千伏",
+    "220千伏及以上"
+  ],
+  "tariffs": [
+    {
+      "region": "北京",
+      "voltageLevel": "1~10(20)千伏",
+      "energyPrice": 0.205,
+      "demandPrice": 52,
+      "capacityPrice": 33
+    },
+    {
+      "region": "北京",
+      "voltageLevel": "35千伏",
+      "energyPrice": 0.165,
+      "demandPrice": 48,
+      "capacityPrice": 30
+    },
+    {
+      "region": "北京",
+      "voltageLevel": "110千伏",
+      "energyPrice": 0.165,
+      "demandPrice": 48,
+      "capacityPrice": 30
+    },
+    {
+      "region": "北京",
+      "voltageLevel": "220千伏及以上",
+      "energyPrice": 0.15,
+      "demandPrice": 45,
+      "capacityPrice": 28
+    },
+    {
+      "region": "天津",
+      "voltageLevel": "1~10(20)千伏",
+      "energyPrice": 0.1631,
+      "demandPrice": 43.2,
+      "capacityPrice": 27
+    },
+    {
+      "region": "天津",
+      "voltageLevel": "35千伏",
+      "energyPrice": 0.1402,
+      "demandPrice": 40,
+      "capacityPrice": 25
+    },
+    {
+      "region": "天津",
+      "voltageLevel": "110千伏",
+      "energyPrice": 0.1264,
+      "demandPrice": 40,
+      "capacityPrice": 25
+    },
+    {
+      "region": "天津",
+      "voltageLevel": "220千伏及以上",
+      "energyPrice": 0.1052,
+      "demandPrice": 36.8,
+      "capacityPrice": 23
+    },
+    {
+      "region": "河北（南网价区）",
+      "voltageLevel": "1~10(20)千伏",
+      "energyPrice": 0.1476,
+      "demandPrice": 35.2,
+      "capacityPrice": 22
+    },
+    {
+      "region": "河北（南网价区）",
+      "voltageLevel": "35千伏",
+      "energyPrice": 0.1226,
+      "demandPrice": 33.6,
+      "capacityPrice": 21
+    },
+    {
+      "region": "河北（南网价区）",
+      "voltageLevel": "110千伏",
+      "energyPrice": 0.0976,
+      "demandPrice": 32,
+      "capacityPrice": 20
+    },
+    {
+      "region": "河北（南网价区）",
+      "voltageLevel": "220千伏及以上",
+      "energyPrice": 0.0726,
+      "demandPrice": 30.4,
+      "capacityPrice": 19
+    },
+    {
+      "region": "冀北",
+      "voltageLevel": "1~10(20)千伏",
+      "energyPrice": 0.1365,
+      "demandPrice": 37.8,
+      "capacityPrice": 23.6
+    },
+    {
+      "region": "冀北",
+      "voltageLevel": "35千伏",
+      "energyPrice": 0.1145,
+      "demandPrice": 36.2,
+      "capacityPrice": 22.6
+    },
+    {
+      "region": "冀北",
+      "voltageLevel": "110千伏",
+      "energyPrice": 0.0925,
+      "demandPrice": 34.6,
+      "capacityPrice": 21.6
+    },
+    {
+      "region": "冀北",
+      "voltageLevel": "220千伏及以上",
+      "energyPrice": 0.0705,
+      "demandPrice": 33,
+      "capacityPrice": 20.6
+    },
+    {
+      "region": "山西",
+      "voltageLevel": "1~10(20)千伏",
+      "energyPrice": 0.104,
+      "demandPrice": 34.8,
+      "capacityPrice": 21.8
+    },
+    {
+      "region": "山西",
+      "voltageLevel": "35千伏",
+      "energyPrice": 0.074,
+      "demandPrice": 34,
+      "capacityPrice": 21.3
+    },
+    {
+      "region": "山西",
+      "voltageLevel": "110千伏",
+      "energyPrice": 0.049,
+      "demandPrice": 31.6,
+      "capacityPrice": 19.8
+    },
+    {
+      "region": "山西",
+      "voltageLevel": "220千伏及以上",
+      "energyPrice": 0.029,
+      "demandPrice": 30,
+      "capacityPrice": 18.8
+    },
+    {
+      "region": "蒙东",
+      "voltageLevel": "1~10(20)千伏",
+      "energyPrice": 0.1346,
+      "demandPrice": 32.8,
+      "capacityPrice": 20.5
+    },
+    {
+      "region": "蒙东",
+      "voltageLevel": "35千伏",
+      "energyPrice": 0.108,
+      "demandPrice": 32.8,
+      "capacityPrice": 20.5
+    },
+    {
+      "region": "蒙东",
+      "voltageLevel": "110千伏",
+      "energyPrice": 0.087,
+      "demandPrice": 31.2,
+      "capacityPrice": 19.5
+    },
+    {
+      "region": "蒙东",
+      "voltageLevel": "220千伏及以上",
+      "energyPrice": 0.0601,
+      "demandPrice": 31.2,
+      "capacityPrice": 19.5
+    },
+    {
+      "region": "蒙西（内蒙古电力）",
+      "voltageLevel": "1~10(20)千伏",
+      "energyPrice": 0.0787,
+      "demandPrice": 32.8,
+      "capacityPrice": 20.5
+    },
+    {
+      "region": "蒙西（内蒙古电力）",
+      "voltageLevel": "35千伏",
+      "energyPrice": 0.0637,
+      "demandPrice": 32.8,
+      "capacityPrice": 20.5
+    },
+    {
+      "region": "蒙西（内蒙古电力）",
+      "voltageLevel": "110千伏",
+      "energyPrice": 0.052,
+      "demandPrice": 31.2,
+      "capacityPrice": 19.5
+    },
+    {
+      "region": "蒙西（内蒙古电力）",
+      "voltageLevel": "220千伏及以上",
+      "energyPrice": 0.0429,
+      "demandPrice": 31.2,
+      "capacityPrice": 19.5
+    },
+    {
+      "region": "辽宁",
+      "voltageLevel": "1~10(20)千伏",
+      "energyPrice": 0.1053,
+      "demandPrice": 38.4,
+      "capacityPrice": 24
+    },
+    {
+      "region": "辽宁",
+      "voltageLevel": "110千伏",
+      "energyPrice": 0.084,
+      "demandPrice": 36.8,
+      "capacityPrice": 23
+    },
+    {
+      "region": "辽宁",
+      "voltageLevel": "220千伏及以上",
+      "energyPrice": 0.0571,
+      "demandPrice": 35.2,
+      "capacityPrice": 22
+    },
+    {
+      "region": "吉林",
+      "voltageLevel": "1~10(20)千伏",
+      "energyPrice": 0.1513,
+      "demandPrice": 38.4,
+      "capacityPrice": 24
+    },
+    {
+      "region": "吉林",
+      "voltageLevel": "110千伏",
+      "energyPrice": 0.1213,
+      "demandPrice": 36.8,
+      "capacityPrice": 23
+    },
+    {
+      "region": "吉林",
+      "voltageLevel": "220千伏及以上",
+      "energyPrice": 0.1113,
+      "demandPrice": 36.8,
+      "capacityPrice": 23
+    },
+    {
+      "region": "黑龙江",
+      "voltageLevel": "1~10(20)千伏",
+      "energyPrice": 0.1385,
+      "demandPrice": 36.8,
+      "capacityPrice": 23
+    },
+    {
+      "region": "黑龙江",
+      "voltageLevel": "35千伏",
+      "energyPrice": 0.1171,
+      "demandPrice": 36.8,
+      "capacityPrice": 23
+    },
+    {
+      "region": "黑龙江",
+      "voltageLevel": "110千伏",
+      "energyPrice": 0.1026,
+      "demandPrice": 35.2,
+      "capacityPrice": 22
+    },
+    {
+      "region": "黑龙江",
+      "voltageLevel": "220千伏及以上",
+      "energyPrice": 0.0763,
+      "demandPrice": 35.2,
+      "capacityPrice": 22
+    },
+    {
+      "region": "上海",
+      "voltageLevel": "1~10(20)千伏",
+      "energyPrice": 0.1623,
+      "demandPrice": 44.8,
+      "capacityPrice": 28
+    },
+    {
+      "region": "上海",
+      "voltageLevel": "35千伏",
+      "energyPrice": 0.1268,
+      "demandPrice": 41.6,
+      "capacityPrice": 26
+    },
+    {
+      "region": "上海",
+      "voltageLevel": "110千伏",
+      "energyPrice": 0.0953,
+      "demandPrice": 38.4,
+      "capacityPrice": 24
+    },
+    {
+      "region": "上海",
+      "voltageLevel": "220千伏及以上",
+      "energyPrice": 0.0851,
+      "demandPrice": 35.2,
+      "capacityPrice": 22
+    },
+    {
+      "region": "江苏",
+      "voltageLevel": "1~10(20)千伏",
+      "energyPrice": 0.1298,
+      "demandPrice": 51.2,
+      "capacityPrice": 32
+    },
+    {
+      "region": "江苏",
+      "voltageLevel": "35千伏",
+      "energyPrice": 0.1048,
+      "demandPrice": 48,
+      "capacityPrice": 30
+    },
+    {
+      "region": "江苏",
+      "voltageLevel": "110千伏",
+      "energyPrice": 0.0788,
+      "demandPrice": 44.8,
+      "capacityPrice": 28
+    },
+    {
+      "region": "江苏",
+      "voltageLevel": "220千伏及以上",
+      "energyPrice": 0.0518,
+      "demandPrice": 41.6,
+      "capacityPrice": 26
+    },
+    {
+      "region": "浙江",
+      "voltageLevel": "1~10(20)千伏",
+      "energyPrice": 0.125,
+      "demandPrice": 47.2,
+      "capacityPrice": 29.5
+    },
+    {
+      "region": "浙江",
+      "voltageLevel": "35千伏",
+      "energyPrice": 0.0895,
+      "demandPrice": 44,
+      "capacityPrice": 27.5
+    },
+    {
+      "region": "浙江",
+      "voltageLevel": "110千伏",
+      "energyPrice": 0.0767,
+      "demandPrice": 40.8,
+      "capacityPrice": 25.5
+    },
+    {
+      "region": "浙江",
+      "voltageLevel": "220千伏及以上",
+      "energyPrice": 0.0663,
+      "demandPrice": 37.6,
+      "capacityPrice": 23.5
+    },
+    {
+      "region": "安徽",
+      "voltageLevel": "1~10(20)千伏",
+      "energyPrice": 0.1324,
+      "demandPrice": 46.4,
+      "capacityPrice": 29
+    },
+    {
+      "region": "安徽",
+      "voltageLevel": "35千伏",
+      "energyPrice": 0.107,
+      "demandPrice": 43.2,
+      "capacityPrice": 27
+    },
+    {
+      "region": "安徽",
+      "voltageLevel": "110千伏",
+      "energyPrice": 0.0809,
+      "demandPrice": 40.8,
+      "capacityPrice": 25.5
+    },
+    {
+      "region": "安徽",
+      "voltageLevel": "220千伏及以上",
+      "energyPrice": 0.0548,
+      "demandPrice": 38.4,
+      "capacityPrice": 24
+    },
+    {
+      "region": "福建",
+      "voltageLevel": "1~10(20)千伏",
+      "energyPrice": 0.1219,
+      "demandPrice": 40,
+      "capacityPrice": 25
+    },
+    {
+      "region": "福建",
+      "voltageLevel": "35千伏",
+      "energyPrice": 0.1019,
+      "demandPrice": 39,
+      "capacityPrice": 24.4
+    },
+    {
+      "region": "福建",
+      "voltageLevel": "110千伏",
+      "energyPrice": 0.0769,
+      "demandPrice": 38,
+      "capacityPrice": 23.8
+    },
+    {
+      "region": "福建",
+      "voltageLevel": "220千伏及以上",
+      "energyPrice": 0.0462,
+      "demandPrice": 37,
+      "capacityPrice": 23.1
+    },
+    {
+      "region": "江西",
+      "voltageLevel": "1~10(20)千伏",
+      "energyPrice": 0.1485,
+      "demandPrice": 42.3,
+      "capacityPrice": 26.4
+    },
+    {
+      "region": "江西",
+      "voltageLevel": "35千伏",
+      "energyPrice": 0.1285,
+      "demandPrice": 40.6,
+      "capacityPrice": 25.4
+    },
+    {
+      "region": "江西",
+      "voltageLevel": "110千伏",
+      "energyPrice": 0.1085,
+      "demandPrice": 39.1,
+      "capacityPrice": 24.4
+    },
+    {
+      "region": "江西",
+      "voltageLevel": "220千伏及以上",
+      "energyPrice": 0.0935,
+      "demandPrice": 37.5,
+      "capacityPrice": 23.4
+    },
+    {
+      "region": "山东",
+      "voltageLevel": "1~10(20)千伏",
+      "energyPrice": 0.14,
+      "demandPrice": 40,
+      "capacityPrice": 25
+    },
+    {
+      "region": "山东",
+      "voltageLevel": "35千伏",
+      "energyPrice": 0.123,
+      "demandPrice": 36,
+      "capacityPrice": 22.5
+    },
+    {
+      "region": "山东",
+      "voltageLevel": "110千伏",
+      "energyPrice": 0.106,
+      "demandPrice": 36,
+      "capacityPrice": 22.5
+    },
+    {
+      "region": "山东",
+      "voltageLevel": "220千伏及以上",
+      "energyPrice": 0.089,
+      "demandPrice": 32,
+      "capacityPrice": 20
+    },
+    {
+      "region": "河南",
+      "voltageLevel": "1~10(20)千伏",
+      "energyPrice": 0.1655,
+      "demandPrice": 40,
+      "capacityPrice": 25
+    },
+    {
+      "region": "河南",
+      "voltageLevel": "35千伏",
+      "energyPrice": 0.1392,
+      "demandPrice": 36.8,
+      "capacityPrice": 23
+    },
+    {
+      "region": "河南",
+      "voltageLevel": "110千伏",
+      "energyPrice": 0.1125,
+      "demandPrice": 33.6,
+      "capacityPrice": 21
+    },
+    {
+      "region": "河南",
+      "voltageLevel": "220千伏及以上",
+      "energyPrice": 0.098,
+      "demandPrice": 30.4,
+      "capacityPrice": 19
+    },
+    {
+      "region": "湖北",
+      "voltageLevel": "1~10(20)千伏",
+      "energyPrice": 0.1263,
+      "demandPrice": 42,
+      "capacityPrice": 26.3
+    },
+    {
+      "region": "湖北",
+      "voltageLevel": "35千伏",
+      "energyPrice": 0.1065,
+      "demandPrice": 42,
+      "capacityPrice": 26.3
+    },
+    {
+      "region": "湖北",
+      "voltageLevel": "110千伏",
+      "energyPrice": 0.0884,
+      "demandPrice": 39,
+      "capacityPrice": 24.4
+    },
+    {
+      "region": "湖北",
+      "voltageLevel": "220千伏及以上",
+      "energyPrice": 0.0694,
+      "demandPrice": 39,
+      "capacityPrice": 24.4
+    },
+    {
+      "region": "湖南",
+      "voltageLevel": "1~10(20)千伏",
+      "energyPrice": 0.1694,
+      "demandPrice": 35.4,
+      "capacityPrice": 22.1
+    },
+    {
+      "region": "湖南",
+      "voltageLevel": "35千伏",
+      "energyPrice": 0.1394,
+      "demandPrice": 35.4,
+      "capacityPrice": 22.1
+    },
+    {
+      "region": "湖南",
+      "voltageLevel": "110千伏",
+      "energyPrice": 0.1104,
+      "demandPrice": 32.2,
+      "capacityPrice": 20.1
+    },
+    {
+      "region": "湖南",
+      "voltageLevel": "220千伏及以上",
+      "energyPrice": 0.0852,
+      "demandPrice": 32.2,
+      "capacityPrice": 20.1
+    },
+    {
+      "region": "广东（不含深圳）",
+      "voltageLevel": "1~10(20)千伏",
+      "energyPrice": 0.0979,
+      "demandPrice": 36.1,
+      "capacityPrice": 22.6
+    },
+    {
+      "region": "广东（不含深圳）",
+      "voltageLevel": "35千伏",
+      "energyPrice": 0.0727,
+      "demandPrice": 31,
+      "capacityPrice": 19.4
+    },
+    {
+      "region": "广东（不含深圳）",
+      "voltageLevel": "110千伏",
+      "energyPrice": 0.0727,
+      "demandPrice": 31,
+      "capacityPrice": 19.4
+    },
+    {
+      "region": "广东（不含深圳）",
+      "voltageLevel": "220千伏及以上",
+      "energyPrice": 0.0449,
+      "demandPrice": 26.1,
+      "capacityPrice": 16.3
+    },
+    {
+      "region": "广西",
+      "voltageLevel": "1~10(20)千伏",
+      "energyPrice": 0.1476,
+      "demandPrice": 38.7,
+      "capacityPrice": 24.2
+    },
+    {
+      "region": "广西",
+      "voltageLevel": "35千伏",
+      "energyPrice": 0.1054,
+      "demandPrice": 37.3,
+      "capacityPrice": 23.3
+    },
+    {
+      "region": "广西",
+      "voltageLevel": "110千伏",
+      "energyPrice": 0.0777,
+      "demandPrice": 34.2,
+      "capacityPrice": 21.4
+    },
+    {
+      "region": "广西",
+      "voltageLevel": "220千伏及以上",
+      "energyPrice": 0.0293,
+      "demandPrice": 32,
+      "capacityPrice": 20
+    },
+    {
+      "region": "海南",
+      "voltageLevel": "1~10(20)千伏",
+      "energyPrice": 0.1348,
+      "demandPrice": 41.6,
+      "capacityPrice": 26
+    },
+    {
+      "region": "海南",
+      "voltageLevel": "35千伏",
+      "energyPrice": 0.118,
+      "demandPrice": 38.4,
+      "capacityPrice": 24
+    },
+    {
+      "region": "海南",
+      "voltageLevel": "110千伏",
+      "energyPrice": 0.0993,
+      "demandPrice": 35.2,
+      "capacityPrice": 22
+    },
+    {
+      "region": "海南",
+      "voltageLevel": "220千伏及以上",
+      "energyPrice": 0.0702,
+      "demandPrice": 32,
+      "capacityPrice": 20
+    },
+    {
+      "region": "重庆",
+      "voltageLevel": "1~10(20)千伏",
+      "energyPrice": 0.1515,
+      "demandPrice": 35.2,
+      "capacityPrice": 22
+    },
+    {
+      "region": "重庆",
+      "voltageLevel": "35千伏",
+      "energyPrice": 0.1256,
+      "demandPrice": 35.2,
+      "capacityPrice": 22
+    },
+    {
+      "region": "重庆",
+      "voltageLevel": "110千伏",
+      "energyPrice": 0.1062,
+      "demandPrice": 32,
+      "capacityPrice": 20
+    },
+    {
+      "region": "重庆",
+      "voltageLevel": "220千伏及以上",
+      "energyPrice": 0.0868,
+      "demandPrice": 32,
+      "capacityPrice": 20
+    },
+    {
+      "region": "四川",
+      "voltageLevel": "1~10(20)千伏",
+      "energyPrice": 0.1391,
+      "demandPrice": 35,
+      "capacityPrice": 22
+    },
+    {
+      "region": "四川",
+      "voltageLevel": "35千伏",
+      "energyPrice": 0.1125,
+      "demandPrice": 30,
+      "capacityPrice": 19
+    },
+    {
+      "region": "四川",
+      "voltageLevel": "110千伏",
+      "energyPrice": 0.0644,
+      "demandPrice": 27,
+      "capacityPrice": 17
+    },
+    {
+      "region": "四川",
+      "voltageLevel": "220千伏及以上",
+      "energyPrice": 0.0466,
+      "demandPrice": 24,
+      "capacityPrice": 15
+    },
+    {
+      "region": "贵州",
+      "voltageLevel": "1~10(20)千伏",
+      "energyPrice": 0.1238,
+      "demandPrice": 35,
+      "capacityPrice": 21.9
+    },
+    {
+      "region": "贵州",
+      "voltageLevel": "35千伏",
+      "energyPrice": 0.1097,
+      "demandPrice": 33,
+      "capacityPrice": 20.6
+    },
+    {
+      "region": "贵州",
+      "voltageLevel": "110千伏",
+      "energyPrice": 0.072,
+      "demandPrice": 31,
+      "capacityPrice": 19.4
+    },
+    {
+      "region": "贵州",
+      "voltageLevel": "220千伏及以上",
+      "energyPrice": 0.0468,
+      "demandPrice": 30,
+      "capacityPrice": 18.8
+    },
+    {
+      "region": "云南",
+      "voltageLevel": "1~10(20)千伏",
+      "energyPrice": 0.1246,
+      "demandPrice": 37.6,
+      "capacityPrice": 23.5
+    },
+    {
+      "region": "云南",
+      "voltageLevel": "35千伏",
+      "energyPrice": 0.0995,
+      "demandPrice": 37.6,
+      "capacityPrice": 23.5
+    },
+    {
+      "region": "云南",
+      "voltageLevel": "110千伏",
+      "energyPrice": 0.0683,
+      "demandPrice": 36,
+      "capacityPrice": 22.5
+    },
+    {
+      "region": "云南",
+      "voltageLevel": "220千伏及以上",
+      "energyPrice": 0.0475,
+      "demandPrice": 36,
+      "capacityPrice": 22.5
+    },
+    {
+      "region": "陕西（不含榆林）",
+      "voltageLevel": "1~10(20)千伏",
+      "energyPrice": 0.1271,
+      "demandPrice": 37.6,
+      "capacityPrice": 23.5
+    },
+    {
+      "region": "陕西（不含榆林）",
+      "voltageLevel": "35千伏",
+      "energyPrice": 0.1061,
+      "demandPrice": 37.6,
+      "capacityPrice": 23.5
+    },
+    {
+      "region": "陕西（不含榆林）",
+      "voltageLevel": "110千伏",
+      "energyPrice": 0.0861,
+      "demandPrice": 32.8,
+      "capacityPrice": 20.5
+    },
+    {
+      "region": "陕西（不含榆林）",
+      "voltageLevel": "220千伏及以上",
+      "energyPrice": 0.0731,
+      "demandPrice": 32.8,
+      "capacityPrice": 20.5
+    },
+    {
+      "region": "陕西（榆林地区）",
+      "voltageLevel": "1~10(20)千伏",
+      "energyPrice": 0.1083,
+      "demandPrice": 37.6,
+      "capacityPrice": 23.5
+    },
+    {
+      "region": "陕西（榆林地区）",
+      "voltageLevel": "35千伏",
+      "energyPrice": 0.0873,
+      "demandPrice": 37.6,
+      "capacityPrice": 23.5
+    },
+    {
+      "region": "陕西（榆林地区）",
+      "voltageLevel": "110千伏",
+      "energyPrice": 0.0673,
+      "demandPrice": 32.8,
+      "capacityPrice": 20.5
+    },
+    {
+      "region": "陕西（榆林地区）",
+      "voltageLevel": "220千伏及以上",
+      "energyPrice": 0.0543,
+      "demandPrice": 32.8,
+      "capacityPrice": 20.5
+    },
+    {
+      "region": "甘肃",
+      "voltageLevel": "1~10(20)千伏",
+      "energyPrice": 0.1063,
+      "demandPrice": 38.4,
+      "capacityPrice": 24
+    },
+    {
+      "region": "甘肃",
+      "voltageLevel": "35千伏",
+      "energyPrice": 0.0923,
+      "demandPrice": 36.8,
+      "capacityPrice": 23
+    },
+    {
+      "region": "甘肃",
+      "voltageLevel": "110千伏",
+      "energyPrice": 0.0799,
+      "demandPrice": 32.8,
+      "capacityPrice": 20.5
+    },
+    {
+      "region": "甘肃",
+      "voltageLevel": "220千伏及以上",
+      "energyPrice": 0.0693,
+      "demandPrice": 32.8,
+      "capacityPrice": 20.5
+    },
+    {
+      "region": "青海",
+      "voltageLevel": "1~10(20)千伏",
+      "energyPrice": 0.0871,
+      "demandPrice": 35.2,
+      "capacityPrice": 22
+    },
+    {
+      "region": "青海",
+      "voltageLevel": "35千伏",
+      "energyPrice": 0.0811,
+      "demandPrice": 33.6,
+      "capacityPrice": 21
+    },
+    {
+      "region": "青海",
+      "voltageLevel": "110千伏",
+      "energyPrice": 0.0711,
+      "demandPrice": 32.8,
+      "capacityPrice": 20.5
+    },
+    {
+      "region": "青海",
+      "voltageLevel": "220千伏及以上",
+      "energyPrice": 0.06,
+      "demandPrice": 31.2,
+      "capacityPrice": 19.5
+    },
+    {
+      "region": "宁夏",
+      "voltageLevel": "1~10(20)千伏",
+      "energyPrice": 0.0903,
+      "demandPrice": 28.8,
+      "capacityPrice": 18
+    },
+    {
+      "region": "宁夏",
+      "voltageLevel": "35千伏",
+      "energyPrice": 0.0749,
+      "demandPrice": 28.8,
+      "capacityPrice": 18
+    },
+    {
+      "region": "宁夏",
+      "voltageLevel": "110千伏",
+      "energyPrice": 0.0567,
+      "demandPrice": 25.6,
+      "capacityPrice": 16
+    },
+    {
+      "region": "宁夏",
+      "voltageLevel": "220千伏及以上",
+      "energyPrice": 0.0491,
+      "demandPrice": 25.6,
+      "capacityPrice": 16
+    },
+    {
+      "region": "新疆",
+      "voltageLevel": "1~10(20)千伏",
+      "energyPrice": 0.1202,
+      "demandPrice": 32,
+      "capacityPrice": 20
+    },
+    {
+      "region": "新疆",
+      "voltageLevel": "35千伏",
+      "energyPrice": 0.1098,
+      "demandPrice": 32,
+      "capacityPrice": 20
+    },
+    {
+      "region": "新疆",
+      "voltageLevel": "110千伏",
+      "energyPrice": 0.0808,
+      "demandPrice": 30.4,
+      "capacityPrice": 19
+    },
+    {
+      "region": "新疆",
+      "voltageLevel": "220千伏及以上",
+      "energyPrice": 0.0485,
+      "demandPrice": 30.4,
+      "capacityPrice": 19
+    }
+  ],
+  "parameters": [
+    {
+      "key": "pvCapacityMw",
+      "label": "光伏装机",
+      "section": "project",
+      "unit": "MW",
+      "defaultValue": 100,
+      "sourceCell": "测算!C20",
+      "sortOrder": 1
+    },
+    {
+      "key": "pvAnnualHours",
+      "label": "光伏年利用小时",
+      "section": "project",
+      "unit": "h",
+      "defaultValue": 1100,
+      "sourceCell": "测算!C21",
+      "sortOrder": 2
+    },
+    {
+      "key": "windCapacityMw",
+      "label": "风电装机",
+      "section": "project",
+      "unit": "MW",
+      "defaultValue": 0,
+      "sourceCell": "测算!C22",
+      "sortOrder": 3
+    },
+    {
+      "key": "windAnnualHours",
+      "label": "风电年利用小时",
+      "section": "project",
+      "unit": "h",
+      "defaultValue": 0,
+      "sourceCell": "测算!C23",
+      "sortOrder": 4
+    },
+    {
+      "key": "storagePowerMw",
+      "label": "储能功率",
+      "section": "project",
+      "unit": "MW",
+      "defaultValue": 20,
+      "sourceCell": "测算!C24",
+      "sortOrder": 5
+    },
+    {
+      "key": "storageCapacityMwh",
+      "label": "储能容量",
+      "section": "project",
+      "unit": "MWh",
+      "defaultValue": 40,
+      "sourceCell": "测算!C25",
+      "sortOrder": 6
+    },
+    {
+      "key": "gridCapacityKva",
+      "label": "接入公网容量（自主申报）",
+      "section": "project",
+      "unit": "kVA",
+      "defaultValue": 25000,
+      "sourceCell": "测算!C26",
+      "sortOrder": 7
+    },
+    {
+      "key": "maxDemandKw",
+      "label": "申报（合同）最大需量",
+      "section": "project",
+      "unit": "kW",
+      "defaultValue": 20000,
+      "sourceCell": "测算!C27",
+      "sortOrder": 8
+    },
+    {
+      "key": "annualLoadWanKwh",
+      "label": "用户年用电量",
+      "section": "energy",
+      "unit": "万kWh",
+      "defaultValue": 12000,
+      "sourceCell": "测算!C30",
+      "sortOrder": 9
+    },
+    {
+      "key": "selfUseWanKwh",
+      "label": "年自发自用电量",
+      "section": "energy",
+      "unit": "万kWh",
+      "defaultValue": 9000,
+      "sourceCell": "测算!C31",
+      "sortOrder": 10
+    },
+    {
+      "key": "curtailmentRate",
+      "label": "弃电率",
+      "section": "energy",
+      "unit": "%",
+      "defaultValue": 0.02,
+      "sourceCell": "测算!C32",
+      "sortOrder": 11
+    },
+    {
+      "key": "degradationRate",
+      "label": "年出力衰减率",
+      "section": "energy",
+      "unit": "%",
+      "defaultValue": 0.005,
+      "sourceCell": "测算!C33",
+      "sortOrder": 12
+    },
+    {
+      "key": "directPrice",
+      "label": "直供电价（协商）",
+      "section": "price",
+      "unit": "元/kWh",
+      "defaultValue": 0.35,
+      "sourceCell": "测算!C36",
+      "sortOrder": 13
+    },
+    {
+      "key": "gridPurchasePrice",
+      "label": "下网市场购电价",
+      "section": "price",
+      "unit": "元/kWh",
+      "defaultValue": 0.55,
+      "sourceCell": "测算!C37",
+      "sortOrder": 14
+    },
+    {
+      "key": "baselineGridPrice",
+      "label": "电网购电对比到户价",
+      "section": "price",
+      "unit": "元/kWh",
+      "defaultValue": 0.62,
+      "sourceCell": "测算!C38",
+      "sortOrder": 15
+    },
+    {
+      "key": "exportPrice",
+      "label": "上网结算均价",
+      "section": "price",
+      "unit": "元/kWh",
+      "defaultValue": 0.2,
+      "sourceCell": "测算!C39",
+      "sortOrder": 16
+    },
+    {
+      "key": "averageLoadFactor",
+      "label": "平均负荷率",
+      "section": "price",
+      "unit": "%",
+      "defaultValue": 0.55,
+      "sourceCell": "测算!C40",
+      "sortOrder": 17
+    },
+    {
+      "key": "systemOperationPrice",
+      "label": "系统运行费单价",
+      "section": "price",
+      "unit": "元/kWh",
+      "defaultValue": 0.0209,
+      "sourceCell": "测算!C41",
+      "sortOrder": 18
+    },
+    {
+      "key": "lineLossPrice",
+      "label": "上网环节线损费用单价",
+      "section": "price",
+      "unit": "元/kWh",
+      "defaultValue": 0.01,
+      "sourceCell": "测算!C42",
+      "sortOrder": 19
+    },
+    {
+      "key": "governmentFundPrice",
+      "label": "政府性基金及附加单价",
+      "section": "price",
+      "unit": "元/kWh",
+      "defaultValue": 0.02717,
+      "sourceCell": "测算!C43",
+      "sortOrder": 20
+    },
+    {
+      "key": "crossSubsidyPrice",
+      "label": "交叉补贴单价（已并入系统运行费的省份填0）",
+      "section": "price",
+      "unit": "元/kWh",
+      "defaultValue": 0,
+      "sourceCell": "测算!C44",
+      "sortOrder": 21
+    },
+    {
+      "key": "greenValuePrice",
+      "label": "绿证/CBAM折算单价（单列）",
+      "section": "price",
+      "unit": "元/kWh",
+      "defaultValue": 0.005,
+      "sourceCell": "测算!C45",
+      "sortOrder": 22
+    },
+    {
+      "key": "pvUnitInvestment",
+      "label": "光伏单位投资",
+      "section": "finance",
+      "unit": "元/W",
+      "defaultValue": 3,
+      "sourceCell": "测算!C48",
+      "sortOrder": 23
+    },
+    {
+      "key": "windUnitInvestment",
+      "label": "风电单位投资",
+      "section": "finance",
+      "unit": "元/W",
+      "defaultValue": 4.5,
+      "sourceCell": "测算!C49",
+      "sortOrder": 24
+    },
+    {
+      "key": "storageUnitInvestment",
+      "label": "储能单位投资",
+      "section": "finance",
+      "unit": "元/Wh",
+      "defaultValue": 1,
+      "sourceCell": "测算!C50",
+      "sortOrder": 25
+    },
+    {
+      "key": "lineInvestmentWan",
+      "label": "专线及升压投资",
+      "section": "finance",
+      "unit": "万元",
+      "defaultValue": 6000,
+      "sourceCell": "测算!C51",
+      "sortOrder": 26
+    },
+    {
+      "key": "equityRatio",
+      "label": "资本金比例",
+      "section": "finance",
+      "unit": "%",
+      "defaultValue": 0.3,
+      "sourceCell": "测算!C52",
+      "sortOrder": 27
+    },
+    {
+      "key": "loanRate",
+      "label": "贷款利率",
+      "section": "finance",
+      "unit": "%",
+      "defaultValue": 0.045,
+      "sourceCell": "测算!C53",
+      "sortOrder": 28
+    },
+    {
+      "key": "loanYears",
+      "label": "贷款年限",
+      "section": "finance",
+      "unit": "年",
+      "defaultValue": 15,
+      "sourceCell": "测算!C54",
+      "sortOrder": 29
+    },
+    {
+      "key": "operationYears",
+      "label": "运营期",
+      "section": "finance",
+      "unit": "年",
+      "defaultValue": 25,
+      "sourceCell": "测算!C55",
+      "sortOrder": 30
+    },
+    {
+      "key": "opexRate",
+      "label": "运维费率",
+      "section": "finance",
+      "unit": "%",
+      "defaultValue": 0.012,
+      "sourceCell": "测算!C56",
+      "sortOrder": 31
+    },
+    {
+      "key": "insuranceRate",
+      "label": "保险费率",
+      "section": "finance",
+      "unit": "%",
+      "defaultValue": 0.0025,
+      "sourceCell": "测算!C57",
+      "sortOrder": 32
+    },
+    {
+      "key": "annualRentWan",
+      "label": "土地/场地租金（不含税）",
+      "section": "finance",
+      "unit": "万元/年",
+      "defaultValue": 0,
+      "sourceCell": "测算!C58",
+      "sortOrder": 33
+    },
+    {
+      "key": "landAcquisitionWan",
+      "label": "土地取得费",
+      "section": "finance",
+      "unit": "万元",
+      "defaultValue": 0,
+      "sourceCell": "测算!C59",
+      "sortOrder": 34
+    },
+    {
+      "key": "landAmortizationYears",
+      "label": "土地使用权税前摊销年限",
+      "section": "finance",
+      "unit": "年",
+      "defaultValue": 0,
+      "sourceCell": "测算!C60",
+      "sortOrder": 35
+    },
+    {
+      "key": "landInputVatWan",
+      "label": "土地可抵扣进项税额",
+      "section": "finance",
+      "unit": "万元",
+      "defaultValue": 0,
+      "sourceCell": "测算!C61",
+      "sortOrder": 36
+    },
+    {
+      "key": "terminalRecoverableWan",
+      "label": "期末预计可回收净额",
+      "section": "finance",
+      "unit": "万元",
+      "defaultValue": 0,
+      "sourceCell": "测算!C62",
+      "sortOrder": 37
+    },
+    {
+      "key": "depreciationYears",
+      "label": "折旧年限",
+      "section": "finance",
+      "unit": "年",
+      "defaultValue": 20,
+      "sourceCell": "测算!C63",
+      "sortOrder": 38
+    },
+    {
+      "key": "residualRate",
+      "label": "残值率",
+      "section": "finance",
+      "unit": "%",
+      "defaultValue": 0.05,
+      "sourceCell": "测算!C64",
+      "sortOrder": 39
+    },
+    {
+      "key": "incomeTaxRate",
+      "label": "所得税率",
+      "section": "finance",
+      "unit": "%",
+      "defaultValue": 0.25,
+      "sourceCell": "测算!C65",
+      "sortOrder": 40
+    },
+    {
+      "key": "inputVatRatio",
+      "label": "可抵扣进项税比例",
+      "section": "finance",
+      "unit": "%",
+      "defaultValue": 0.1,
+      "sourceCell": "测算!C66",
+      "sortOrder": 41
+    },
+    {
+      "key": "discountRate",
+      "label": "基准折现率",
+      "section": "finance",
+      "unit": "%",
+      "defaultValue": 0.06,
+      "sourceCell": "测算!C67",
+      "sortOrder": 42
+    },
+    {
+      "key": "storageReplacementYear",
+      "label": "储能更换年份",
+      "section": "finance",
+      "unit": "第N年",
+      "defaultValue": 12,
+      "sourceCell": "测算!C68",
+      "sortOrder": 43
+    },
+    {
+      "key": "replacementCostRatio",
+      "label": "更换费用比例",
+      "section": "finance",
+      "unit": "%",
+      "defaultValue": 0.5,
+      "sourceCell": "测算!C69",
+      "sortOrder": 44
+    }
+  ]
+}
