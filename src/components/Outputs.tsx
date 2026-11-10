@@ -1,11 +1,13 @@
-import { useMemo } from "react";
+import { Component, useMemo, type ReactNode } from "react";
 import { Chart } from "react-chartjs-2";
 import {
+  BarController,
   BarElement,
   CategoryScale,
   Chart as ChartJS,
   Legend,
   LinearScale,
+  LineController,
   LineElement,
   PointElement,
   Tooltip,
@@ -23,10 +25,35 @@ import {
 } from "../lib/calculator";
 import { irrLabel, money, ratio, yearsLabel } from "../lib/format";
 
-ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, BarElement, Tooltip, Legend);
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  BarElement,
+  BarController,
+  LineController,
+  Tooltip,
+  Legend,
+);
 ChartJS.defaults.font.family =
   '"PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Noto Sans CJK SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif';
 ChartJS.defaults.color = "#3d5148";
+
+class ChartBoundary extends Component<{ children: ReactNode }, { failed: boolean }> {
+  state = { failed: false };
+
+  static getDerivedStateFromError(): { failed: boolean } {
+    return { failed: true };
+  }
+
+  render() {
+    if (this.state.failed) {
+      return <p className="callout warn">现金流图暂时无法绘制，逐年数据仍在下方表格中。</p>;
+    }
+    return this.props.children;
+  }
+}
 
 function Status({ pass, label }: { pass: boolean; label: string }) {
   return <span className={pass ? "badge ok" : "badge bad"}>{label}</span>;
@@ -279,9 +306,11 @@ export function Outputs({ form, result }: { form: FormState; result: ProjectResu
             <p>单位：万元。第 0 年为含税总投资流出。累计折现使用基准折现率，第 t 年除以 (1+r)^t。</p>
           </div>
         </div>
-        <div className="chart-box" role="img" aria-label="税后净现金流与累计折现税后现金流">
-          <Chart type="bar" data={chart.data} options={chart.options} />
-        </div>
+        <ChartBoundary>
+          <div className="chart-box" role="img" aria-label="税后净现金流与累计折现税后现金流">
+            <Chart type="bar" data={chart.data} options={chart.options} />
+          </div>
+        </ChartBoundary>
         <p className="scroll-hint">表格较宽，可左右滑动查看各年。</p>
         <div className="table-scroll">
           <table className="flow">
