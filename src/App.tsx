@@ -33,7 +33,7 @@ export function App() {
             <p className="eyebrow">发改价格〔2025〕1192 号 · 《绿电直连经济测算》v{MODEL.version}</p>
             <h1>绿电直连经济评价</h1>
             <p className="lede">
-              实时测算并网或离网项目的准入红线、综合到户电价、税前/税后/资本金 IRR、NPV、静态与动态回收期，以及期末折现 LCOE。默认方案为山东、110 千伏、并网型、单一容量制。
+              实时测算并网或离网项目的准入红线、综合到户电价、税前/税后/资本金 IRR、NPV、静态与动态回收期，以及期末折现 LCOE。
             </p>
           </div>
         </div>
