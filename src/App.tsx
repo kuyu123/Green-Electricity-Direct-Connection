@@ -10,7 +10,7 @@ const TOC = [
   { href: "#finance", label: "财务" },
   { href: "#cashflow", label: "现金流" },
   { href: "#lcoe", label: "LCOE" },
-  { href: "#notes", label: "来源与简化" },
+  { href: "#notes", label: "简化" },
 ];
 
 export function App() {
@@ -68,16 +68,7 @@ export function App() {
 
       <footer className="site-footer">
         <div className="wrap">
-          <p>
-            绿电直连经济评价 · 模型 v{MODEL.version} · 输配电价更新至 {MODEL.sourceUpdatedAt}
-          </p>
-          <p>
-            方法论来源：
-            <a href="https://github.com/YANXUE112/green-power-direct-toolkit" target="_blank" rel="noreferrer">
-              YANXUE112/green-power-direct-toolkit
-            </a>
-            ；源表作者介子九维。
-          </p>
+          <p>绿电直连经济评价 · 模型 v{MODEL.version} · 输配电价更新至 {MODEL.sourceUpdatedAt}</p>
         </div>
       </footer>
     </>

@@ -412,16 +412,12 @@ export function Outputs({ form, result }: { form: FormState; result: ProjectResu
       <section className="card" id="notes">
         <div className="section-head">
           <div>
-            <h2>方法来源与简化</h2>
+            <h2>简化说明</h2>
           </div>
         </div>
         <p>
-          口径依据公开文档化的《绿电直连经济测算》v{MODEL.version}（价库更新日期 {MODEL.sourceUpdatedAt}）与国家发展改革委《关于完善价格机制促进新能源发电就近消纳的通知》（发改价格〔2025〕1192
-          号）。源 Excel 作者为介子九维（JIEZIJIUWEI）。公开实现见{" "}
-          <a href="https://github.com/YANXUE112/green-power-direct-toolkit" target="_blank" rel="noreferrer">
-            YANXUE112/green-power-direct-toolkit
-          </a>
-          。该仓库没有开源许可证，本页按其公开方法论与省级输配电价事实独立实现，不照搬其源代码。
+          测算口径为《绿电直连经济测算》v{MODEL.version}（价库更新日期 {MODEL.sourceUpdatedAt}）。并网输配电费按国家发展改革委《关于完善价格机制促进新能源发电就近消纳的通知》（发改价格〔2025〕1192
+          号）。
         </p>
         <ul className="notes">
           <li>不变价：无通胀，无电价或成本的年增长。</li>
